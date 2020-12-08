@@ -17,7 +17,7 @@ export default {
 <style>
 
 body {
-  padding: 1rem 7.5rem;
+  padding: 1rem 0;
   margin: 0;
   box-sizing: border-box;
 }

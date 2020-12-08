@@ -1,12 +1,19 @@
 <template>
-  <h1>Home Page</h1>
+  <div class="home-container">
+    <div class="background"></div>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import Main from '@/components/pages/Main'
-
 export default {
   name: 'Home'
 }
 </script>
+
+<style scoped>
+  .background {
+    width: 100%;
+    height: 350px;
+    background: #2c2640;
+  }
+</style>

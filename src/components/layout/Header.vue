@@ -21,6 +21,8 @@ export default {
         background: #fff;
         color: #333;
         overflow: auto;
+        margin-bottom: 1rem;
+        padding: 0 7.5rem;
     }
     .header img {
         float: left;
