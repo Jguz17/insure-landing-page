@@ -5,7 +5,7 @@
             <router-link style="padding-right: 1rem" to="/how-we-work">How We Work</router-link>
             <router-link style="padding-right: 1rem" to="/blog">Blog</router-link>
             <router-link style="padding-right: 1rem" to="/account">Account</router-link>
-            <button><router-link to="/plans">VIEW PLANS</router-link></button>
+            <router-link to="/plans"><button class="button is-small">VIEW PLANS</button></router-link>
         </div>
     </header>
 </template>
@@ -23,20 +23,21 @@ export default {
         overflow: auto;
         margin-bottom: 1rem;
         padding: 0 7.5rem;
+        z-index: 9999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .header img {
-        float: left;
+    .header a {
+        display: flex;
+        align-items: center;
     }
     .header a {
         color: #333;
         text-decoration: none;
     }
     .nav {
-        float: right;
-    }
-    .nav button {
-        background: transparent;
-        border: 2px solid #333;
-        padding: .5rem 1.25rem;
+        display: flex;
+        align-items: center;
     }
 </style>

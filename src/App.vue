@@ -14,7 +14,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~bulma/css/bulma.css";
 
 body {
   padding: 1rem 0;
