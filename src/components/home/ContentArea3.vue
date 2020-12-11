@@ -29,7 +29,7 @@ export default {
     }
     .content-area-3 {
         padding: 0 7.5rem;
-        margin-top: 6.5rem;
+        margin: 6.5rem 0;
     }
     .content {
         display: flex;
