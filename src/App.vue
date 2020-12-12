@@ -21,7 +21,7 @@ export default {
 @import "~bulma/css/bulma.css";
 
 body {
-  padding: 1rem 0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
