@@ -44,7 +44,8 @@ export default {
     .hidden-icon {
         display: none;
     }
-    @media all and (max-width: 480px) { 
+
+    @media all and (max-width: 668px) { 
         .nav {
             display: none;
         }

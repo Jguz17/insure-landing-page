@@ -75,6 +75,27 @@ export default {
     .icon-3 h1 {
         margin-top: 2rem;
     }
+      @media all and (min-width: 480px) and (max-width: 1024px) {
+          .svg {
+              display: none;
+          }
+          hr {
+            margin: 0 auto;
+        }
+        .normal-content-container h1 {
+            font-size: 2rem;
+        }
+        .icons-container {
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+        .icon-1,
+        .icon-2,
+        .icon-3 {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        }
+      }
     @media all and (max-width: 480px) { 
         hr {
             margin: 0 auto;

@@ -30,7 +30,7 @@ export default {
     background: #2c2640;
     z-index: 1;
   }
-  @media all and (max-width: 480px) { 
+  @media all and (max-width: 824px) { 
     .background-1 {
       display: none;
     }

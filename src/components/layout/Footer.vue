@@ -86,7 +86,25 @@ export default {
     .column {
         max-width: 250px;
     }
-
+    @media all and (min-width: 480px) and (max-width: 668px) {
+        footer {
+            text-align: center;
+            /* padding: 5% 7.5% 2.5%; */
+        }
+        .row-1 {
+            padding: 5rem 0 2.5rem;
+        }
+        .row-1 img {
+            padding: 0 0 1rem;
+        }
+        .row-1,
+        .row-2 {
+            flex-direction: column;
+        }
+        .column {
+            margin: 0 auto;
+        }
+    }
     @media all and (max-width: 480px) { 
         footer {
             text-align: center;

@@ -2,7 +2,7 @@
     <div class="content-area-1">
       <img id="hidden-image" src="../../../images/image-intro-desktop.jpg"/>
       <div class="content hidden-container">
-        <h1 style="color: white;" class="title is-2">Humanizing <br/>Your Insurance</h1>
+        <h1 style="color: white;" class="title is-2">Humanizing Your Insurance</h1>
         <!-- <div class="content"> -->
           <p style="color: white; fontWeight: bold">Get your life insurance coverage easier and faster. We blend our expertise and technology to help
             you find the plan that's right for you. Ensure you and your loved ones are insured.
@@ -56,9 +56,13 @@ export default {
     margin-top: -35rem;
     padding: 0 7.5%;
   }
+  .right-container-area {
+        max-width: 50%;
+  }
   .left-content-area {
     color: #fff;
     text-align: left;
+    max-width: 40%;
   }
   .left-content-area hr {
     width: 200px;
@@ -68,11 +72,47 @@ export default {
     right: 0;
     margin-top: -5.5rem;
   }
-  /* @media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+  /* @media all and (min-width: 1024px) and (max-width: 1280px) { } */
  
-  @media all and (min-width: 768px) and (max-width: 1024px) { }
+  @media all and (min-width: 668px) and (max-width: 1024px) {
+    
+  } 
   
-  @media all and (min-width: 480px) and (max-width: 768px) { } */
+  @media all and (min-width: 480px) and (max-width: 824px) {
+    .content {
+      text-align: center;
+      padding: 1rem 7.5%;
+      
+    }
+    .content-area-1 {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .left-content-area {
+      display: none;
+    }
+    .right-container-area {
+      display: none;
+    }
+    #hidden-image {
+      display: block;
+      width: 100%;
+      height: 100vh;
+    }
+    .hidden-container {
+       width: 100%;
+      height: 100vh;
+      background: #2c2640;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+   } 
   
   @media all and (max-width: 480px) { 
     .content {

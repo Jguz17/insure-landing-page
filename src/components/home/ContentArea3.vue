@@ -5,7 +5,7 @@
                 <img id="image" src="../../../images/bg-pattern-how-we-work-desktop.svg"/>
                 <img id="hidden-image" src="../../../images/bg-pattern-how-we-work-mobile.svg"/>
                 <div class="content">
-                    <h1 class="title is-1" style="color: white">Find out more<br/> about how we work</h1>
+                    <h1 class="title is-2" style="color: white">Find out more<br/> about how we work</h1>
                     <button class="button is-small">HOW WE WORK</button>
                 </div>
             </div>
@@ -35,13 +35,31 @@ export default {
     .content {
         display: flex;
         justify-content: space-between;
-        padding: 4.5% 2%;
+        padding: 7% 2%;
     }
     .button {
         margin-top: 2.5%;
     }
     #hidden-image {
         display: none;
+    }
+    @media all and (min-width: 480px) and (max-width: 1024px) {
+         #image {
+            display: none;
+        }
+        #hidden-image {
+            display: block;
+            right: 7.5%;
+        }
+        .content {
+            padding: 12.5% 2%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .background {
+            height: 45vh;
+        }
     }
     @media all and (max-width: 480px) { 
         #image {
@@ -52,7 +70,7 @@ export default {
             right: 7.5%;
         }
         .content {
-            padding: 10% 2%;
+            padding: 20% 2%;
             flex-direction: column;
             align-items: center;
             text-align: center;
