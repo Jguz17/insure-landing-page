@@ -7,6 +7,7 @@
             <router-link style="padding-right: 1rem" to="/account">Account</router-link>
             <router-link to="/plans"><button class="button is-small">VIEW PLANS</button></router-link>
         </div>
+        <div class="hidden-icon"><img src="../../../images/icon-hamburger.svg"/></div>
     </header>
 </template>
 
@@ -22,7 +23,7 @@ export default {
         color: #333;
         overflow: auto;
         margin-bottom: 1rem;
-        padding: 0 7.5rem;
+        padding: 1rem 7.5% 0;
         z-index: 9999;
         display: flex;
         justify-content: space-between;
@@ -39,5 +40,16 @@ export default {
     .nav {
         display: flex;
         align-items: center;
+    }
+    .hidden-icon {
+        display: none;
+    }
+    @media all and (max-width: 480px) { 
+        .nav {
+            display: none;
+        }
+        .hidden-icon {
+            display: block;
+    }
     }
 </style>

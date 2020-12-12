@@ -46,7 +46,8 @@ export default {
         width: 200px;
     }
     .content-area-2 {
-        padding: 0 7.5rem;
+        padding: 0 7.5%;
+        text-align: center;
     }
     .svg img {
         position: absolute;
@@ -74,4 +75,25 @@ export default {
     .icon-3 h1 {
         margin-top: 2rem;
     }
+    @media all and (max-width: 480px) { 
+        hr {
+            margin: 0 auto;
+        }
+        .normal-content-container h1 {
+            font-size: 2rem;
+        }
+        .icons-container {
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+        .icon-1,
+        .icon-2,
+        .icon-3 {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        }
+        .svg {
+            display: none;
+        }
+  }
 </style>

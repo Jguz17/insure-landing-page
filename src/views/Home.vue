@@ -20,13 +20,19 @@ export default {
     ContentArea3,
   }
 }
+
 </script>
 
 <style scoped>
   .background-1 {
     width: 100%;
-    height: 650px;
+    height: 81.5vh;
     background: #2c2640;
     z-index: 1;
+  }
+  @media all and (max-width: 480px) { 
+    .background-1 {
+      display: none;
+    }
   }
 </style>

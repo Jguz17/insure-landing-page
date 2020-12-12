@@ -59,7 +59,7 @@ export default {
 
 <style scoped>
     footer {
-        padding: 5rem 7.5rem 2.5rem;
+        padding: 5% 7.5% 2.5%;
         width: 100%;
         background: #FAFAFA;
     }
@@ -76,7 +76,7 @@ export default {
     }
     hr {
         width: 100%;
-        margin: 2.5rem 0;
+        margin: 2.5% 0;
         background: #8d9eb9;
     }
     .row-2 {
@@ -86,4 +86,24 @@ export default {
     .column {
         max-width: 250px;
     }
+
+    @media all and (max-width: 480px) { 
+        footer {
+            text-align: center;
+            /* padding: 5% 7.5% 2.5%; */
+        }
+        .row-1 {
+            padding: 5rem 0 2.5rem;
+        }
+        .row-1 img {
+            padding: 0 0 1rem;
+        }
+        .row-1,
+        .row-2 {
+            flex-direction: column;
+        }
+        .column {
+            margin: 0 auto;
+        }
+  }
 </style>
