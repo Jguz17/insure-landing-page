@@ -75,9 +75,9 @@ export default {
 
   /* @media all and (min-width: 1024px) and (max-width: 1280px) { } */
  
-  @media all and (min-width: 668px) and (max-width: 1024px) {
+  /* @media all and (min-width: 668px) and (max-width: 1024px) {
     
-  } 
+  }  */
   
   @media all and (min-width: 480px) and (max-width: 824px) {
     .content {
@@ -100,11 +100,11 @@ export default {
     #hidden-image {
       display: block;
       width: 100%;
-      height: 100vh;
+      height: 80vh;
     }
     .hidden-container {
        width: 100%;
-      height: 100vh;
+      height: 80vh;
       background: #2c2640;
       z-index: 1;
       display: flex;
