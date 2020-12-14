@@ -17,10 +17,10 @@
             </div>
             <!-- <button>{{ state.mobileNavDisplay }}</button> -->
             <div class="link-container-mobile">
-                <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/how-we-work"><div>How We Work</div></router-link>
-                <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/blog"><div>Blog</div></router-link>
-                <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/account"><div>Account</div></router-link>
-                <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" to="/plans"><div>Plans</div></router-link>
+                <div>How We Work</div>
+                <div>Blog</div>
+                <div>Account</div>
+                <div>Plans</div>
             </div>
         </div>
     </header>
@@ -104,7 +104,7 @@ export default {
         align-items: center;
         margin-top: 2rem;
     }
-    .link-container-mobile a {
+    .link-container-mobile {
         color: #fff;
     }
     .logo-and-close-mobile {
