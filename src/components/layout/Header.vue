@@ -17,7 +17,6 @@
             </div>
             <!-- <button>{{ state.mobileNavDisplay }}</button> -->
             <div class="link-container-mobile">
-                <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/"><div>Home</div></router-link>
                 <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/how-we-work"><div>How We Work</div></router-link>
                 <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/blog"><div>Blog</div></router-link>
                 <router-link @click="triggerMobileNav(), triggerMobileNavDiv()" style="padding-right: 1rem" to="/account"><div>Account</div></router-link>
