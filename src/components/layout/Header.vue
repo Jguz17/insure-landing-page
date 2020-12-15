@@ -2,11 +2,14 @@
     <header class="header">
         <router-link to="/"><img src="../../../images/logo.svg"/></router-link>
         <div class="nav">
-            <button class="button is-small" @click="state.count++">{{ state.count }} x 2 = {{ times2 }}</button>
-            <router-link style="padding-right: 1rem" to="/how-we-work">How We Work</router-link>
-            <router-link style="padding-right: 1rem" to="/blog">Blog</router-link>
-            <router-link style="padding-right: 1rem" to="/account">Account</router-link>
-            <router-link to="/plans"><button class="button is-small">VIEW PLANS</button></router-link>
+            <!-- <button class="button is-small" @click="state.count++">{{ state.count }} x 2 = {{ times2 }}</button> -->
+            <!-- <router-link style="padding-right: 1rem" to="/how-we-work">How We Work</router-link> -->
+            <div>How We Work</div>
+            <!-- <router-link style="padding-right: 1rem" to="/blog">Blog</router-link> -->
+            <div>Blog</div>
+            <!-- <router-link style="padding-right: 1rem" to="/account">Account</router-link> -->
+            <div>Account</div>
+            <button class="button is-small">VIEW PLANS</button>
         </div>
         <div class="hidden-icon"><img @click="triggerMobileNav(), triggerMobileNavDiv()" src="../../../images/icon-hamburger.svg"/></div>
         <!-- <button>{{ state.mobileNavDisplay }}</button> -->
@@ -117,6 +120,12 @@ export default {
         width: 100%;
         back
     } */
+    .nav div {
+        padding-left: .75rem;
+    }
+    .nav button {
+        margin-left: .75rem;
+    }
     @media all and (max-width: 668px) { 
         .nav {
             display: none;
